@@ -220,3 +220,25 @@ table.log select { min-height: 44px; }
 .blind-item { padding: 8px 0; border-bottom: 1px solid var(--line); overflow-wrap: anywhere; }
 .blind-name { font-weight: 700; }
 .blind-retest { font-weight: 700; white-space: nowrap; }
+
+
+/* ---- 多章勾选 ---- */
+.picked-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  padding: 10px 0;
+  margin: 10px 0 4px;
+  border-top: 1px solid var(--line, #e5e5e5);
+  border-bottom: 1px solid var(--line, #e5e5e5);
+}
+.picked-bar:empty { display: none; }
+.picked-sum { font-weight: 600; }
+.chap-pick-wrap {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 6px;
+  cursor: pointer;
+}
+.chap-pick { width: 20px; height: 20px; }
